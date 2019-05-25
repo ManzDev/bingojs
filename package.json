@@ -1,0 +1,15 @@
+{
+  "name": "bingojs",
+  "version": "1.0.0",
+  "description": "Javascript example - FullStack EOI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

@@ -1,0 +1,39 @@
+.board {
+  display: flex;
+}
+
+.cell {
+  width: 100%;
+  text-align: center;
+}
+
+.player_card, .cpu_card {
+  width: 200px;
+  margin: auto;
+}
+
+.bingo {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid #888;
+  border-radius: 35%;
+  font-size: 72px;
+  text-align: center;
+  color: #333;
+}
+
+.number {
+  display: inline-block;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.number.strike {
+  text-decoration: line-through;
+  background-color: #A22;
+  border: 1px solid #A22;
+  color: #fff;
+}
