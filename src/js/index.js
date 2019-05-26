@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { createCard, showCard, strikeNumber, checkWinner } from './cards.js';
-import newNumber from './bombo.js';
+import newNumber from './roller.js';
 
 // DOM
 const btnNewNumber = document.querySelector('.newNumber');
@@ -16,8 +16,8 @@ showCard('.cpu_card', cpuCard);
 // Escuchamos los clicks en el botón
 btnNewNumber.addEventListener('click', function() {
 
-  const bola = newNumber();                         // Sacamos una bola
-  strikeNumber(bola, [playerCard, cpuCard]);        // Tachamos la bola de los cartones
+  const ball = newNumber();                         // Sacamos una bola
+  strikeNumber(ball, [playerCard, cpuCard]);        // Tachamos la bola de los cartones
 
   // Comprueba si hay ganador o no
   if (checkWinner([playerCard, cpuCard]))

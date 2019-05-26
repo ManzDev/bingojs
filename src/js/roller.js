@@ -5,11 +5,11 @@ import { MAXBOLAS } from './config.js';
 const divBingo = document.querySelector('.bingo');
 
 // Genera el bombo y lo desordena
-const bombo = _.shuffle(_.range(1, MAXBOLAS));
+const roller = _.shuffle(_.range(1, MAXBOLAS));
 
 // Sacamos una bola del bombo
 export default () => {
-  const bola = bombo.pop();
-  divBingo.textContent = bola;
-  return bola;
+  const ball = roller.pop();
+  divBingo.textContent = ball;
+  return ball;
 }
