@@ -1,11 +1,11 @@
 import _ from 'lodash';
-import { MAXBOLAS } from './config.js';
+import { MAXBALLS } from './config.js';
 
 // DOM
 const divBingo = document.querySelector('.bingo');
 
 // Genera el bombo y lo desordena
-const roller = _.shuffle(_.range(1, MAXBOLAS));
+const roller = _.shuffle(_.range(1, MAXBALLS));
 
 // Sacamos una bola del bombo
 export default () => {
